@@ -17,10 +17,10 @@ let cidade = prompt("Fale uma cidade do Brasi:");
 };
 
 function verificarSoma() {
-    
-let primeiroNumero = (prompt("Vamos fazer uma soma, digite o primeiro numero inteiro:"));
-let segundoNumero = (prompt("digite o segundo numero inteiro:"));
-let soma = parseInt(primeiroNumero + segundoNumero); 
+
+let primeiroNumero = parseInt(prompt("Vamos fazer uma soma, digite o primeiro numero inteiro:"));
+let segundoNumero = parseInt(prompt("digite o segundo numero inteiro:"));
+let soma = (primeiroNumero + segundoNumero); 
 
 alert(`A soma de ${primeiroNumero} + ${segundoNumero} deu o total de ${soma}!`);
 };
