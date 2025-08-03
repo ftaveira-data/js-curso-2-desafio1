@@ -1,57 +1,57 @@
 //1 Criar uma função que exibe "Olá, mundo!" no console.
-function exibirOlaMundo() {
-    console.log("Olá, Mundo!");
-};
-exibirOlaMundo();
-
-
-//2 Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
-function receberNome(nome) {
-    console.log("Olá, " + nome +"!" );    
-};
-receberNome("José");
-
-
-//3 Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
-function dobrarNumero(numero) {
-    return numero * 2;
-};
-
-let resultado = dobrarNumero(10);
-console.log(resultado);
-
-
-//4 Criar uma função que recebe três números como parâmetros e retorna a média deles.
-function mediaSimples(a, b, c) {
-    return (a + b + c)/3; 
-};
-
-let resultadoMedia = mediaSimples(5, 7, 9);
-console.log(resultadoMedia)
-
-
-//5 Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
-function maiorNumero(a, b) {
-    if (a < b) {
-        return(b);
-    } else if (a > b) {
-        return(a);        
-    } else {
-        return "Os números são iguais";
-    }
-}
-
-let resultadoMaiorNumero = maiorNumero(15, 10);
-console.log(resultadoMaiorNumero);
-
-
-//6 Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
-function numeroQuadrado(a) {
-    return Math.pow(a, 2);
-};
-
-let resultadoNumeroQuadrado = numeroQuadrado(8);
-console.log(resultadoNumeroQuadrado);
+//function exibirOlaMundo() {
+//    console.log("Olá, Mundo!");
+//};
+//exibirOlaMundo();
+//
+//
+////2 Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+//function receberNome(nome) {
+//    console.log("Olá, " + nome +"!" );    
+//};
+//receberNome("José");
+//
+//
+////3 Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+//function dobrarNumero(numero) {
+//    return numero * 2;
+//};
+//
+//let resultado = dobrarNumero(10);
+//console.log(resultado);
+//
+//
+////4 Criar uma função que recebe três números como parâmetros e retorna a média deles.
+//function mediaSimples(a, b, c) {
+//    return (a + b + c)/3; 
+//};
+//
+//let resultadoMedia = mediaSimples(5, 7, 9);
+//console.log(resultadoMedia)
+//
+//
+////5 Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+//function maiorNumero(a, b) {
+//    if (a < b) {
+//        return(b);
+//    } else if (a > b) {
+//        return(a);        
+//    } else {
+//        return "Os números são iguais";
+//    }
+//}
+//
+//let resultadoMaiorNumero = maiorNumero(15, 10);
+//console.log(resultadoMaiorNumero);
+//
+//
+////6 Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+//function numeroQuadrado(a) {
+//    return Math.pow(a, 2);
+//};
+//
+//let resultadoNumeroQuadrado = numeroQuadrado(8);
+//console.log(resultadoNumeroQuadrado);
 
 //7  Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
 //let peso = parseFloat(prompt("Digite seu peso:"));
@@ -65,13 +65,13 @@ console.log(resultadoNumeroQuadrado);
 //alert(`O teu IMC é ${resultadoImc.toFixed(2)}`);
 
 //8 Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
-function calcularFatorial(n) {
-    console.log("n:", n); 
-    if (n <= 1) return 1;
-    return n * calcularFatorial(n - 1);
-}
-
-console.log("Resultado da Fatorial:", calcularFatorial(8));
+//function calcularFatorial(n) {
+//    console.log("n:", n); 
+//    if (n <= 1) return 1;
+//    return n * calcularFatorial(n - 1);
+//}
+//
+//console.log("Resultado da Fatorial:", calcularFatorial(8));
 
 
 //9 Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
@@ -86,40 +86,64 @@ console.log("Resultado da Fatorial:", calcularFatorial(8));
 //alert(`O total final convertido será de R$${valorConvertido.toFixed(2)}`);
 
 //10 Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
-function calcularSala(altura, largura) {
-    let area = altura * largura;
-    let perimetro = 2 * (altura + largura);
-
-    console.log(`A área da sala é: ${area} m²`);
-    console.log(`O perímetro da sala é: ${perimetro} metros`);
-}
-calcularSala(3, 5);
+//function calcularSala(altura, largura) {
+//    let area = altura * largura;
+//    let perimetro = 2 * (altura + largura);
+//
+//    console.log(`A área da sala é: ${area} m²`);
+//    console.log(`O perímetro da sala é: ${perimetro} metros`);
+//}
+//calcularSala(3, 5);
 
 
 //11 Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14
 
-let raio = parseFloat(prompt("Digite o raio da sala circular (em metros):"));
-
-function calcularSalaCircular(raio) {
-    const pi = 3.14;
-    let area = pi * raio * raio;
-    let perimetro = 2 * pi * raio;
-
-    alert(`Área: ${area.toFixed(2)} m²\nPerímetro: ${perimetro.toFixed(2)} metros`);
-}
-
-calcularSalaCircular(raio);
+//let raio = parseFloat(prompt("Digite o raio da sala circular (em metros):"));
+//
+//function calcularSalaCircular(raio) {
+//    const pi = 3.14;
+//    let area = pi * raio * raio;
+//    let perimetro = 2 * pi * raio;
+//
+//    alert(`Área: ${area.toFixed(2)} m²\nPerímetro: ${perimetro.toFixed(2)} metros`);
+//}
+//
+//calcularSalaCircular(raio);
 
 
 //12 Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
 
-let tabuada = parseInt(prompt("Qual tabuada você gostaria de calcular?"));
+//let tabuada = parseInt(prompt("Qual tabuada você gostaria de calcular?"));
+//
+//function calcularTabuada(numero) {
+//    console.log(`Tabuada do ${numero}`);
+//    for (let i = 1; i <= 10; i++) {
+//        console.log(`${numero} x ${i} = ${numero * i}`);
+//    }
+//}
 
-function calcularTabuada(numero) {
-    console.log(`Tabuada do ${numero}`);
-    for (let i = 1; i <= 10; i++) {
-        console.log(`${numero} x ${i} = ${numero * i}`);
-    }
-}
+//calcularTabuada(tabuada);
 
-calcularTabuada(tabuada);
+//13 Crie uma lista vazia, com o nome listaGenerica. 
+let listaGenerica = [];
+console.log(listaGenerica);
+
+//14 Crie uma lista de linguagens de programação chamada linguagensDeProgramacao com os seguintes elementos: 'JavaScript','C','C++', 'Kotlin' e 'Python'. 
+let linguagensDeProgramacao = ["JavaScript","C", "C++", "Kotlin", "Python"];
+console.log(linguagensDeProgramacao);
+
+//15 Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.
+linguagensDeProgramacao.push("Java", "Ruby", "Golang");
+console.log(linguagensDeProgramacao);
+
+//16 Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
+let listaNomes = ["Joao", "Maria", "José"];
+console.log(listaNomes[0]);
+
+//17 Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.
+let listaNomes1 = ["Joao", "Maria", "José"];
+console.log(listaNomes1[1]);
+
+//18 Crie uma lista com 3 nomes e exiba no console apenas o último elemento. 
+let listaNomes2 = ["Joao", "Maria", "José"];
+console.log(listaNomes2[2]);
